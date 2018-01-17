@@ -1,0 +1,113 @@
+<!--
+  Generated template for the AddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label color="primary">Offnder Name*</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Aliases</ion-label>
+    <ion-input [(ngModel)]="aliases"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">DOB</ion-label>
+    <ion-input (click)="cal()" disabled="true" value="{{datestr|date:'shortDate'}}"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">AGE</ion-label>
+    <ion-input [(ngModel)]="age"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">MobileNo</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Email</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">PSName*</ion-label>
+  <ion-select  name="bubbles">
+ <ion-option *ngFor="let item of ZonesData" [value]="item.PSname">{{item.PSname}}</ion-option>
+ <!-- <ion-option value="f">Female</ion-option>
+   <ion-option value="m">Male</ion-option> -->
+  </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Vehicle Details</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Currrent Activity</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label color="primary">Present Address</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Permanent Address</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Offender House Owner</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Date of Last Arrest</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">PS Arrested</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">Date of Release</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Social Media</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">Address per PS</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">History Sheet</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">Latest Photograph Collected</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary">Reason</ion-label>
+    <ion-input ></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="display()">Submit</button>
+</ion-content>
